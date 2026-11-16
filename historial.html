@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <header>
+        <h1 style="text-align: center;">HOSPITAL GENERAL</h1>
+        <P style="text-align: center;">Salud y buen vivir</P>
+        <hr>
+        <br>
+        <nav>
+            <a href="/index.html"> Home</a> |
+            <a href="/historial.html"> Historial clíncico</a> |
+        </nav>
+        <h2 style="text-align: center;">Historial clinico del paciente</h2>
+        <form action="#">
+            <label for="nombre">Ingrese sus nombres y apellidos:</label>
+            <br><br>
+            <input type="text" id="nombre" placeholder="Nombre completo" required>
+            <br><br>
+            <label for="cedula">Ingrese su número de cédula:</label>
+            <br><br>
+            <input type="text" id="cedula" maxlength="10" minlength="10" placeholder="Ej: 1234567890" required>
+            <br><br>
+            <label for="email">Ingrese su email:</label>
+            <br><br>
+            <input type="email" id="email" placeholder="Correo electrónico" required>
+            <br><br>
+
+            <label for="contraseña">Ingrese su contraseña:</label>
+            <br><br>
+            <input type="password" id="contraseña" placeholder="Contraseña" required>
+            <br><br>
+            <label for="telefono">Ingrese su número de teléfono:</label>
+            <br><br>
+            <input type="tel" id="telefono" placeholder="+593" required>
+            <br><br>
+
+            <label for="fecha_nacimiento">Ingrese su fecha de nacimiento:</label>
+            <br><br>
+            <input type="date" id="fecha_nacimiento" required>
+            <br><br>
+            <label for="codigo">Buscar código de atención:</label>
+            <br><br>
+            <input type="search" id="codigo" placeholder="Código del paciente">
+            <br><br>
+            <label for="ingreso">Fecha y hora de ingreso:</label>
+            <br><br>
+            <input type="datetime-local" id="ingreso">
+            <br><br>
+
+
+            <label for="estatura">Estatura del paciente:</label>
+            <br><br>
+            <input type="range" id="estatura" min="100" max="220">
+            <br><br>
+            <label for="sangre">Tipo de sangre:</label>
+            <br><br>
+            <select name="sangre" id="sangre" required>
+                <option value="" disabled selected>Seleccionar</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="desconocido">Desconocido</option>
+            </select>
+            <br><br>
+
+            <label for="alergias">¿Tiene alergias a medicamentos?</label>
+            <br><br>
+            <textarea id="alergias" name="alergias" rows="3" cols="40"
+                placeholder="Indique cuáles o escriba Ninguna"></textarea>
+            <br><br>
+
+            <label>Género:</label>
+            <br><br>
+            <label for="masculino">
+                <input type="radio" id="masculino" name="genero"> Masculino
+            </label>
+
+            <label for="femenino">
+                <input type="radio" id="femenino" name="genero"> Femenino
+            </label>
+
+            <label for="otro">
+                <input type="radio" id="otro" name="genero"> Otro
+            </label>
+            <br><br>
+
+            <label for="ciudad">Ciudad:</label>
+            <select name="ciudad" id="ciudad">
+                <option value="" disabled selected>Seleccionar</option>
+                <option value="quito">Quito</option>
+                <option value="latacunga">Latacunga</option>
+                <option value="ibarra">Ibarra</option>
+                <option value="cuenca">Cuenca</option>
+                <option value="otro">Otro</option>
+            </select>
+      
+            <button type="button">Botón simple</button>
+            <input type="submit" value="Registrar paciente">
+            <button type="reset">Limpiar</button>
+              <label for="comentarios">Danos tu opinion sobre el trato que recibiste:</label>
+            <br><br>
+            <textarea name="comentarios" id="comentarios" rows="4" cols="50" placeholder="Comentarios"></textarea>
+            <br><br>
+
+            <label for="foto">Adjuntar fotografía de lo que se podria mejorar dentro del hospital:</label>
+            <br><br>
+            <input type="file" id="foto" accept="image/*">
+            <br><br>
+</body>
+
+</html>
